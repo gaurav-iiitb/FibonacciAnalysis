@@ -29,3 +29,10 @@ Loop through m^2 to find k, in most cases it isn't greater than 6m.
 Works well for very large values of n even for (n = 10^1000)
 Constraints = Calling the same iteration function multiple times.
 Is not very efficient when the value of m is very large say 10^12.
+
+--Fibonacci using Power--
+Time Complexity = O(log n)
+Space Complexity = O(1)
+Works well for all sorts of data. Here the matmul function always multiplies 2 matrice of order [2,2] hence the number of multiplications is always 2*2*2 hence finishes in constant time. Similarly the pow functions input attribute value n never goes over 9 hence at max it has 4 multiplications again finishes in constant time, only the power function iterates over the number of digits of n hence O(log n). 
+Rest it works well and consumes no special memory. Most suited algorithm.
+
