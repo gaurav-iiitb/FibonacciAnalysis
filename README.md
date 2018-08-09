@@ -24,7 +24,8 @@ eg, calculating F(10^1000) won't work.
 --Iterative for very large values of n--
 Time Complexity = O(log n)
 Only looping through the number of digits in the number rather than the number itself. 
-Space Complexity = O(m^2) but usually doesn't go that far. 
-It in most cases is not greater than 6m hence O(m).
+Space Complexity = O(1) 
+Loop through m^2 to find k, in most cases it isn't greater than 6m.
 Works well for very large values of n even for (n = 10^1000)
-Constraints = Complexities should be in context of the input size n not in terms of m.
+Constraints = Calling the same iteration function multiple times.
+Is not very efficient when the value of m is very large say 10^12.
